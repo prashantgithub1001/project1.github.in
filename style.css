@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container_logo{
+/*	background: red;*/
+	width: 100%; 
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, minmax(10%,1fr));
+}
+.logo{
+/*	background: aqua;*/
+	height: 80px;
+	
+}
+.log{
+	width:100%; height: 80px; border: 0px solid black;
+}
+.logo_text{
+	font-size: 60px;
+	font-family: Elephant;
+	background: white;
+	text-align: center;
+	line-height: 80px;
+	grid-column: span 8;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.marq{
+	background: black;
+	color: white;
+	height: 25px;
+	font-size: 18px;
+	width: 100%;
+	padding: 3px;
+	
+}
+.container_slider{
+	width: 100%; 
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+}
+.slider{
+	height: 500px;
+	max-width:500px
+}
+.mySlides{
+		width:270%;
+		height: 500px;
+	}
+.animate-right{
+	position:relative;
+	animation:animateright 0.4s
+}
+@keyframes animateright{
+	from{right:-300px;opacity:0} to{right:0;opacity:1}
+}
+.container_card{
+/*	background: red;*/
+	width: 100%; 
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, minmax(33%,1fr));
+	gap: 1px;
+}
+.card{
+/*	background: gray;*/
+	height: 280px;
+/*	border: 5px solid red;*/
+}
+.s_img{
+	width: 100%; height: 220px; border-radius: 20px; border: 2px solid black; margin-top: 2px;
+}
+.s_button{
+	font-size: 18px;
+/*	margin-top: 1px;*/
+	margin-left: 180px;
+	cursor: pointer;
+	background: yellow;
+	border-radius: 5px;
+	padding: 10px;
+}
+.s_button:hover{
+	background: aqua;
+}
+.container_lr{
+	background: black;
+	width: 100%; 
+	display: grid; 
+	gap: 1px;
+	grid-template-columns: repeat(auto-fill, minmax(49%,1fr));
+}
+.lr{
+/*	background: pink;*/
+	height: 350px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.lr h1{
+	background: black;
+	color: white;
+	font-size: 63px;
+	text-align: center;
+}
+.l{
+	background: red;
+	color: white;
+	font-size: 22px;
+/*	text-align: right;*/
+	border: 2px solid red;
+
+}
+.rs{
+	background: black;
+	color: white;
+	font-size: 27px;
+	border: 2px solid black;
+}
+.container_footer{
+	background: red;
+	width: 100%; 
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+}
+.footer{
+	background: blue;
+	color: white;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+}
